@@ -10,10 +10,11 @@ export class AppComponent {
   age = 19
   img = 'https://source.unsplash.com/random'
   buttonDisable = true
+  newName=''
 
   person = {
     name: 'kk',
-    age: 12,
+    age: 25,
     avatar: 'https://source.unsplash.com/random'
   }
 
@@ -37,5 +38,16 @@ export class AppComponent {
   changeName(event: Event){
     const element = event.target as HTMLInputElement
     this.person.name = element.value
+  }
+
+  names: string[] = ['rene', 'hasbu', 'san']
+
+  addName(){
+    this.names.push(this.newName)
+    this.newName = ''
+  }
+
+  deleteName(index: number){
+    this.names.splice(index, 1)
   }
 }

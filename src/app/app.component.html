@@ -1,3 +1,43 @@
+
+
+
+
+
+
+
+
+<hr>
+<hr>
+
+
+
+
+<h1>NG FOR</h1>
+<button (click)="addName()">add name</button>
+<input type="text" [(ngModel)]="newName">
+
+<ul>
+  <li *ngFor="let name of names; index as i">
+    {{i}} {{name}}
+    <button (click)="deleteName(i)">Delete</button>
+  </li>
+</ul>
+
+
+<p style="color: rgb(58, 58, 58);">
+  <li *ngIf="names.length == 0"> No hay nombres en la lista</li>
+</p>
+
+
+
+<h1>NG IF</h1>
+<p *ngIf="1 == 1"> js </p>
+<p *ngIf="person.name == 'kk'"> ✔ </p>
+
+
+
+
+
 <h1> Data Binding [()] </h1>
 <h2>NgModel explained</h2>
 
