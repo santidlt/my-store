@@ -42,6 +42,12 @@ export class AppComponent {
   }
 
   names: string[] = ['rene', 'hasbu', 'san']
+  boxName = ''
+  box={
+    width: 100,
+    height: 100,
+    background: 'red'
+  }
 
   addName(){
     this.names.push(this.newName)

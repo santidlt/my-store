@@ -12,6 +12,20 @@
   el campo es requerido
 </p>
 
+<div>
+  <div>
+    <input type="number" [(ngModel)]="box.width">
+    <input type="number" [(ngModel)]="box.height">
+    <input type="color" [(ngModel)]="box.background">
+  </div>
+  <div [ngStyle]="{
+    'width.px': box.width,
+    'height.px': box.height,
+    'background-color': box.background,
+    'display': 'block'
+  }">
+  </div>
+</div>
 
 
 
