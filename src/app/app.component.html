@@ -1,3 +1,19 @@
+<h1>clases y estilos</h1>
+<input type="text" required #nameInputDos="ngModel" [(ngModel)]="person.name">
+<p class="message-error" [class.invalid]="nameInputDos.invalid">
+  el campo es requerido
+</p>
+
+
+
+
+
+<hr>
+<hr>
+
+
+
+
 <h1>NG SWITCH</h1>
 <input type="text" [(ngModel)]="person.name">
 
