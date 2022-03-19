@@ -1,1 +1,9 @@
-<p>first-component works!</p>
+<h1>NG FOR CON ARRAYS</h1>
+
+<div>
+  <div *ngFor="let product of products">
+    <h3> {{product.name}} </h3>
+    <img width="250" [src]="product.image" alt="rocky fight">
+    <h3> {{product.price}} </h3>
+  </div>
+</div>
