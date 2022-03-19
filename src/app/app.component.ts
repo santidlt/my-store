@@ -11,6 +11,7 @@ export class AppComponent {
   img = 'https://source.unsplash.com/random'
   buttonDisable = true
   newName=''
+  widthImage = 200
 
   person = {
     name: 'kk',

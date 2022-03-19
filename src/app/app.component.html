@@ -1,10 +1,24 @@
-<h1>clases y estilos</h1>
+<h1>clases y estilos dinamicos</h1>
 <input type="text" required #nameInputDos="ngModel" [(ngModel)]="person.name">
 <p class="message-error" [class.invalid]="nameInputDos.invalid">
   el campo es requerido
 </p>
 
+<label> Nombre </label>
+<input type="text" required #nameInputTres="ngModel" [(ngModel)]="person.name">
+<p [style.font-style]="nameInputTres.invalid? 'italic' : 'normal'">
+  Textoooooo
+</p>
 
+
+<div>
+  <div>
+    <input type="text" [(ngModel)]="widthImage">
+  </div>
+  <div>
+    <img [style.width.px]="widthImage" [src]="img" alt="random pic">
+  </div>
+</div>
 
 
 
